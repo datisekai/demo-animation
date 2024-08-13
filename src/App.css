@@ -1,0 +1,36 @@
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.element {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.new-element {
+  animation: dropIn 0.6s ease forwards;
+}
+
+.existing-element {
+}
+
+@keyframes dropIn {
+  0% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
